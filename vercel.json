@@ -1,6 +1,8 @@
 {
-  "version": 2,
-  "name": "uzinfocom-task",
-  "builds": [{ "src": "vite.config.ts", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
