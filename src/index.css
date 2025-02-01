@@ -182,6 +182,48 @@ body {
   }
 }
 
+.login-bg {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.login-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./bg-login.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: 1;
+}
+
+.login-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0,0, 0.5); 
+  z-index: 2;
+}
+
+.login-bg > * {
+  position: relative;
+  z-index: 3;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

@@ -31,16 +31,8 @@ const Login = () => {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "#f0f2f5",
-      }}
-    >
-      <Card style={{ width: 400, padding: "12px" }}>
+    <div className="login-bg">
+      <Card style={{ width: 400, padding: "12px", }}>
         <div style={{ textAlign: "center", marginBottom: 22 }}>
           <Title level={2} style={{ margin: 0 }}>
             Kutubxona Tizimi
