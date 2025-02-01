@@ -81,6 +81,7 @@ const Operators = () => {
           <Title level={2}>Operatorlar</Title>
           <Button
             type="primary"
+            size="large"
             icon={<PlusOutlined />}
             onClick={() => {
               setSelectedUser(null);
