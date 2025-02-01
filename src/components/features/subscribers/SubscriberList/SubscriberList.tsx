@@ -119,6 +119,7 @@ const SubscriberList: React.FC<SubscriberListProps> = ({
       dataSource={subscribers}
       rowKey="id"
       loading={loading}
+      scroll={{ x: "max-content" }}
       pagination={{
         showSizeChanger: true,
         showTotal: (total) => `Jami ${total} ta obunachi`,

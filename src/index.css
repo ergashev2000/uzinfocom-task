@@ -180,6 +180,89 @@ body {
   .login-card {
     padding: 24px;
   }
+
+  .site-header {
+    padding: 0 16px;
+  }
+
+  .site-header-title {
+    font-size: 20px;
+  }
+
+  .book-card {
+    margin-bottom: 16px;
+  }
+
+  .book-cover {
+    height: 160px;
+  }
+
+  .book-actions {
+    padding: 8px;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header-title {
+    font-size: 18px;
+  }
+
+  .site-content {
+    margin: 8px;
+    padding: 12px;
+  }
+
+  .login-card {
+    padding: 16px;
+  }
+
+  .book-cover {
+    height: 140px;
+  }
+
+  .ant-table {
+    font-size: 13px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* Flex utilities for responsive layouts */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) {
+  .book-card:hover {
+    transform: none;
+  }
+
+  .ant-btn {
+    padding: 8px 16px;
+    min-height: 44px;
+  }
+
+  .ant-input {
+    min-height: 44px;
+  }
 }
 
 .login-bg {
@@ -191,6 +274,7 @@ body {
   justify-content: center;
   position: relative;
   background-color: #fff;
+  padding: 8px;
 }
 
 .login-bg::before {
