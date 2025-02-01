@@ -200,7 +200,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./bg-login.avif');
+  background: url('./assets/bg-login.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
