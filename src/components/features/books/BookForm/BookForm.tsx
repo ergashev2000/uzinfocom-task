@@ -1,5 +1,6 @@
 import { Form, Input, Button, InputNumber } from "antd";
 import { Book } from "../../../../types";
+import { useEffect } from "react";
 
 interface BookFormProps {
   initialValues?: Book;
@@ -14,12 +15,23 @@ const BookForm: React.FC<BookFormProps> = ({
 }) => {
   const [form] = Form.useForm();
 
+  useEffect(() => {
+    form.resetFields();
+    
+    if (initialValues) {
+      form.setFieldsValue({
+        title: initialValues.title,
+        author: initialValues.author,
+        dailyPrice: initialValues.dailyPrice,
+      });
+    }
+  }, [initialValues, form]);
+
   return (
     <Form
       form={form}
       layout="vertical"
       onFinish={onSubmit}
-      initialValues={initialValues}
     >
       <Form.Item
         label="Nomi"

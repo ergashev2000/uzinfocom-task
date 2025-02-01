@@ -166,7 +166,7 @@ const Books = () => {
         >
           <BookForm
             initialValues={selectedBook || undefined}
-            loading={processingBookId !== null}
+            loading={loading}
             onSubmit={handleSave}
           />
         </Modal>

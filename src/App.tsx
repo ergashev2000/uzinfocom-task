@@ -142,6 +142,9 @@ const App = () => {
                     display: 'flex',
                     justifyContent: 'flex-end',
                     alignItems: 'center',
+                    position: 'sticky',
+                    top: 0,
+                    zIndex: 1,
                 }}>
                     <div>
                         <Text strong>{user.fullName}</Text>
@@ -152,7 +155,7 @@ const App = () => {
                         </Text>
                     </div>
                 </Header>
-                <Content style={{ margin: '24px 16px', padding: 24, background: token.colorBgContainer }}>
+                <Content style={{ margin: '24px 16px', borderRadius: token.borderRadiusLG, padding: 24, background: token.colorBgContainer }}>
                     <Routes>
                         <Route path="/login" element={<Login />} />
                         <Route path="/" element={<Navigate to="/books" />} />
