@@ -9,7 +9,7 @@ import {
     IdcardOutlined,
 } from '@ant-design/icons';
 import { useAuth } from './context/AuthContext';
-import PrivateRoute from './components/common/PrivateRoute';
+import PrivateRoute from './config/PrivateRoute';
 import Login from './pages/Login';
 import Books from './pages/Books';
 import Orders from './pages/Orders';
